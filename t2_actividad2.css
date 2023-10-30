@@ -165,20 +165,103 @@ body {
 
 /* Ingredientes y pasos */
 
+.ingredient_container {
+    background-color: var(--hexcolor-white);
+    border: .1em solid var(--hexcolor-gray);
+    border-style: dashed;
+    margin: 4em 3em 4em 3em;
+    padding: 2em 4em 2em 4em;
+    display: flex;
+    flex-direction: column;
+}
 
+.ingredient_name_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.ingredient_title {
+    font-size: 6em;
+    line-height: 2em;
+}
+
+.ingredient_subtitle {
+    font-size: 3em;
+    line-height: 4.6em;
+    margin-left: .5em;
+}
+
+.text_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 4em;
+}
+
+.section_container {
+    width: 50%;
+}
+
+.section_title {
+    font-size: 2.5em;
+}
+
+.points {
+    padding: 0 4em 0 3em;
+    font-weight: bold;
+}
+
+.ingredient {
+    font-size: 1.5em;
+}
 
 /* Enlaces */
 
 #receta {
-    scroll-margin-top: 9rem;
+    scroll-margin-top: 2rem;
 }
 
 #sopa_cebolla {
-    scroll-margin-top: 0rem;
+    scroll-margin-top: 2rem;
 }
 
 /* Footer */
 
 .footer_container {
     background-color: var(--hexcolor-brown);
+    color: var(--hexcolor-gray);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 5em 3em 5em;
+}
+
+.footer_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    margin-bottom: 2em;
+    padding-right: 2em;
+}
+
+.bigger {
+    width: 35rem;
+}
+
+.title {
+    font-size: 3em;
+}
+
+.title_size {
+    width: 25rem;
+}
+
+.white_color {
+    color: var(--hexcolor-white)
 }
