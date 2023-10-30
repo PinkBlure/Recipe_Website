@@ -1,10 +1,13 @@
 :root {
-    --hexcolor-green: #00BF63;
+    --hexcolor-beige: #E7DFD8;
     --hexcolor-white: #F4F4F4;
+    --hexcolor-orange: #DE8D17;
+    --hexcolor-brown: #37241B;
+    --hexcolor-gray: #BFBFBF;
 }
 
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -16,7 +19,7 @@ body {
 /* Header */
 
 .header_container {
-    background-image: url(./background.png);
+    background-image: url("./img/header_background.png");
     width: 100vw;
     height: 100vh;
     background-position: center;
@@ -29,7 +32,7 @@ body {
 
 .title_container {
     width: 44rem;
-    margin: 3em 6em 0 0;
+    margin: 6em 6em 0 0;
     text-align: right;
 }
 
@@ -39,7 +42,7 @@ body {
 }
 
 .header_title {
-    font-size: 6em;
+    font-size: 5em;
 }
 
 .header_subtitle {
@@ -51,19 +54,131 @@ body {
 }
 
 .header_button {
-    background-color: var(--hexcolor-green);
+    background-color: var(--hexcolor-orange);
     width: 10rem;
     height: 2rem;
     padding: .5em 1em .5em 1em;
-    color: var(--hexcolor-white);
+    color: var(--hexcolor-brown);   
     font-size: 2em;
     font-weight: bold;
     border-radius: .5em;
     text-align: center;
     margin: 10em 3em 0 0;
-    border: 3px solid black;
+    border: .1em solid var(--hexcolor-brown);
+    line-height: 1em;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.header_button {
-    
+.header_button:hover {
+    background-color: var(--hexcolor-brown);
+    color: var(--hexcolor-white);
+}
+
+/* Main */
+
+.main_container {
+    background-color: var(--hexcolor-beige);
+    padding: 2em 2em 2em 2em;
+}
+
+.main_link_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2em 0 4em 0;
+}
+
+.main_link {
+    color: var(--hexcolor-brown);
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.main_link:hover {
+    text-decoration: underline;
+}
+
+/* Receta */
+
+.recipe_container {
+    border: .1em solid var(--hexcolor-brown);
+    margin: 0 3em 0 3em;
+    padding: 2em 4em 2em 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text_image_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.recipe_text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+}
+
+.recipe_title {
+    font-size: 5em;
+}
+
+.recipe_subtitle {
+    font-size: 2em;
+    margin: 1em 0 1em 0;
+}
+
+.recipe_image {
+    height: 30rem;
+    width: 30rem;
+    border: .1em solid var(--hexcolor-brown)
+}
+
+.recipe_button {
+    background-color: var(--hexcolor-orange);
+    width: 10rem;
+    height: 2rem;
+    padding: .5em 1em .5em 1em;
+    color: var(--hexcolor-brown);   
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: .5em;
+    text-align: center;
+    border: .1em solid var(--hexcolor-brown);
+    line-height: 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.recipe_button:hover {
+    background-color: var(--hexcolor-brown);
+    color: var(--hexcolor-white)
+}
+
+/* Ingredientes y pasos */
+
+
+
+/* Enlaces */
+
+#receta {
+    scroll-margin-top: 9rem;
+}
+
+#sopa_cebolla {
+    scroll-margin-top: 0rem;
+}
+
+/* Footer */
+
+.footer_container {
+    background-color: var(--hexcolor-brown);
 }
